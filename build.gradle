@@ -15,15 +15,15 @@ dependencies {
 }
 
 application {
-    mainClassName = 'com.example.helloworld.App'
+    mainClassName = 'com.ps.helloworld.App'
 }
 
 test {
-    useJUnitPlatform()
+    useTestNG()
 }
 
 // Create a custom task to package the application
 tasks.distZip {
-    archiveFileName = "my-mvp-project.zip"
+    archiveFileName = "{rootProject.name}.zip"
 }
 
